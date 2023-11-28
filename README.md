@@ -34,6 +34,46 @@ Os registradores de configuração do periférico USART são os *UCSRnA*, *UCSRn
 
 __Registradores da USART__
 
+Registrador de dados:
+
+<img src="/imagens/imagens_texto/usart_5.png">
+
+Registrador de configuração A:
+
+<img src="/imagens/imagens_texto/usart_6.png">
+
+*Bit 6 e 7:* Assumem 1 quando a transmissão e/ou recepção é completada.
+*Bit 5:* Indica que o registrador de dados está vazio. Em dois casos isso acontece: dado é apagado após leitura e dado é apagado após transmitido.
+*Bit 4:* Erro de frame. Quando não envia STOP BIT, por exemplo.
+*Bit 3:* Erro de recepção. Quando o registrador de entrada de dados está cheio, e chega mais bit.
+*Bit 2:* Erro de bit de paridade, ou seja, pacote corrompido.
+*Bit 1 e 0:* Modo velocidade dobrada e multi-processador.
+
+Registrador de configuração B:
+
+<img src="/imagens/imagens_texto/usart_7.png">
+
+*Bit 6 e 7:* Habilita fonte de interrupção ao terminar a tranmissão ou recepção.
+*Bit 5:* Habilita fonte de interrupção quando o registrador de dados está vazio.
+*Bit 4:* Habilita a recepção.
+*Bit 3:* Habilita a transmissão.
+*Bit 2:* Sinaliza a condição de frame de 9 bits.
+*Bit 1 e 0:* São armazenados o nono bit, na recepção e na transmissão.
+
+Registrador de configuração C:
+
+<img src="/imagens/imagens_texto/usart_8.png">
+
+*Bit 6 e 7:* Modo de transmissão.
+*Bit 4 e 5:* Desabilita ou habilita o tipo de paridade.
+*Bit 3:* Quantidade de STOP BIT.
+
+<img src="/imagens/imagens_texto/usart_9.png">
+
+
+
+
+
 
 
 
