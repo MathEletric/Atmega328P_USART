@@ -70,10 +70,10 @@ Registrador de configuração C:
 
 <img src="/imagens/imagens_texto/usart_9.png">
 
+*Bit 1 e 2:* Indica o tamanho dos caracteres. Dependem do bit 2 do registrador B.
+*Bit 0:* Indica a borda do clock do modo síncrono.
 
-
-
-
+O registrador UBRR0L e UBRR0H contêm o valor de contagem que gera a taxa de transmissão em bits/s.
 
 
 
