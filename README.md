@@ -75,6 +75,6 @@ Registrador de configuração C:
 
 O registrador UBRR0L e UBRR0H contêm o valor de contagem que gera a taxa de transmissão em bits/s.
 
-
+<img src="/imagens/imagens_texto/usart_10.png">
 
 
