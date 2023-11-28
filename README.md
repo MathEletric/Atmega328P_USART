@@ -9,18 +9,15 @@ Na comunicação serial, os participantes enviam e recebem ao mesmo tempo, conce
 Na comunicação síncrona, os envolvidos estão sincronizados por um sinal de clock externo.
 Na comunicação assíncrona, os envolvidos geram seu próprio clock. A imagem acima demonstra a comunicação entre quaisquer dispositivos que tenham implementado um modulo USART.
 
-Como estamos falando de comunicação serial, estamos de antemão falando da camada de enlace, ou *Data Link Layer*, os dados são empacotados no *frame*. Este possui bits além dos bits de dado:
+Como estamos falando de comunicação serial, estamos de antemão falando da camada de enlace, ou *Data Link Layer*, onde dados são empacotados no *frame*. O padrão USART permite enviar frames de 5 a 9 bits, além dos bits de dado:
 
-<img src="/imagens/imagens_texto/usart_1.png">
+<img src="/imagens/imagens_texto/usart_2.png">
+
+A taxa de transmissão deve ser a mesma no transmissor e no receptor.
+
+<img src="/imagens/imagens_texto/usart_3.png">
 
 
-
-
-Este modulo implementa no atmega:
-
-Comunicação serial assíncrona
-
-Comunicação serial síncrona
 
 __Comunicação SPI__
 
