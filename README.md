@@ -21,7 +21,7 @@ Segue o diagrama de blocos da USART no atmega328P:
 
 <img src="/imagens/imagens_texto/usart_4.png">
 
-Vemos no bloco *Clock Generator* que a partir do registrador UBRR0 e da frequência de oscilação do uC (OSC), geramos a taxa de transmissão ou *Baund Rate Generator* para comunicação assíncrona. Para comunicação síncrona, usamos o pino *XCKn* como fonte de clock externo. Os pinos TxDn e RxDn são os responsáveis pela transmissão e recepção, respectivamente.
+Vemos no bloco *Clock Generator* que a partir do registrador UBRR0 e da frequência de oscilação do uC (OSC), geramos a taxa de transmissão ou *Baund Rate Generator* para comunicação assíncrona. Para comunicação síncrona, usamos o pino *XCKn* como fonte de clock externo, que se encontra no pino PD4. Os pinos TxDn e RxDn são os responsáveis pela transmissão e recepção, respectivamente.
 
 A transmissão ocorre da seguinte maneira:
 1) O dado é escrito no registrador *UDRn* de 8 bits;
