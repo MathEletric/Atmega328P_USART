@@ -6,7 +6,7 @@ Para comunicação serial, os participantes enviam e recebem ao mesmo tempo: ful
 Interessante para longas distâncias por ser robusta ao ruído, quando comparado a comunicação paralela.
 
 
-<img src="/imagens/imagens_texto/usart.png">
+<img src="/imagens/imagens_texto/usart_1.png">
 
 
 Este modulo implementa no atmega:
@@ -16,6 +16,7 @@ Comunicação serial assíncrona
 Comunicação serial síncrona
 
 __Comunicação SPI__
+
 Sincronia por sinal externo de clock. Enquanto o master envia para o slave, o slave envia
 para o master, ou seja, do tipo MISO e MOSI. Pode atuar com mais de um escravo. Interessante em curtas distâncias.
 
